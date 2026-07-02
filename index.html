@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor & Posting Management Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vendor Management & Posting Tracker</h1>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Daily Posting Dashboard</h2>
+            <div class="date-selector">
+                <label for="dash-date">Target Date: </label>
+                <input type="date" id="dash-date">
+            </div>
+            <div class="table-responsive">
+                <table id="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Vendor Name</th>
+                            <th>Website</th>
+                            <th>Status</th>
+                            <th>Time Logged</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dashboard-tbody">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Vendor Register & Edit</h2>
+            <form id="vendor-form">
+                <input type="hidden" id="vendor-id">
+                <div class="form-group">
+                    <label for="vendor-name">Vendor Name *</label>
+                    <input type="text" id="vendor-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="vendor-website">Website</label>
+                    <input type="url" id="vendor-website" placeholder="https://example.com">
+                </div>
+                <div class="form-group">
+                    <label for="vendor-mobile">Mobile Number</label>
+                    <input type="tel" id="vendor-mobile">
+                </div>
+                <div class="form-group">
+                    <label for="vendor-notes">Extra Information / Notes</label>
+                    <textarea id="vendor-notes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Save Vendor Profile</button>
+                <button type="button" id="clear-form-btn" class="btn-secondary">Clear/New</button>
+            </form>
+
+            <h3 class="sub-heading">Master Vendor Directory</h3>
+            <div class="table-responsive">
+                <table id="master-vendor-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Mobile</th>
+                            <th>Notes</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="master-vendor-tbody">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
