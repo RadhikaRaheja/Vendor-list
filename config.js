@@ -9,4 +9,4 @@
 // Paste it below, between the quotes.
 // ==========================================================
 
-const API_URL = "PASTE_YOUR_APPS_SCRIPT_URL_HERE";
+const API_URL = "https://script.google.com/macros/s/AKfycbx4X8zCvsYeVdYoQuWqqUoi1CJCNSqS94l8dhrV7RtkAwWC6gffnt2ZqOL1X63e5e_3/exec";
