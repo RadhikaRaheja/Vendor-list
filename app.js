@@ -1,5 +1,5 @@
 // Change this string to your exact Google Apps Script Web App URL
-const API_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const API_URL = "https://script.google.com/macros/s/AKfycbx4X8zCvsYeVdYoQuWqqUoi1CJCNSqS94l8dhrV7RtkAwWC6gffnt2ZqOL1X63e5e_3/exec";
 
 // Global storage arrays
 let masterVendors = [];
